@@ -1,0 +1,103 @@
+<!doctype html>
+
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+  <meta name="google-site-verification" content="lZUTU-m5uvtesYzRgt48nyZEkSnIrdsKzLq5qHpxwRM" />
+  <title>Instacraft&ndash; We solve your business's digital needs.</title>
+  <meta name="description" content="Full Stack Online Consulting Firm">
+  <meta name="author" content="Instacraft">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <script src="sorttable.js"></script>
+  <link rel="stylesheet" href="css/styles.css?v=1.0">
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
+  <script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-100625733-1', 'auto');
+  ga('send', 'pageview');
+
+</script>
+
+  <!--[if lt IE 9]>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv.js"></script>
+  <![endif]-->
+</head>
+<header>
+  <div class="bar">
+    <div class="logo">
+      <a href="/"><img src="IC_logo.png" alt="InstaCraft.io logo"></a>
+
+    </div>
+
+  <div class="primary-nav">
+    <h3 class="text-center">We solve your business's digital needs.</h3>
+  </div>
+
+  <div class="links">
+    <ul>
+      <li><a href="index.html/#about">About</a></li>
+      <li><a href="index.html/#blog">Blog</a></li>
+      <li><a href="index.html/#prices">Get a quote</a></li>
+    </ul>
+  </div>
+
+  </div>
+</header>
+
+<div class="main-container">
+  <h2>How I Host my Websites</h2>
+
+  <p>Hosting can be a pain in the ass. Its incredible to me how difficult it still is to host a website online. Most people have no knowledge of how "the internet" actually works- I.e- what dns addresses are, what servers are, and how each server can have different operating systems etc. They just know that once they write a certain URL and press enter, their browser window will display the website they are looking for.</p>
+  <br>
+  <p>In a time when the barrier between consumer and producer is breaking down, I would've expect that there would be one or more tools that would be ubiquitous to deploying and hosting websites, kind of like how wordpress is the tool for blogging. But, as far as I can tell, there are no clear winners in this space, perhaps also due to the variety of different programming languages and frameworks that people used.</p>
+  <br>
+  <p>In a sense, this is good because it offers flexibility: You can search for the tool that best suits your objective and can go for the wordpress 1 click install types on one end of the spectrum or if you need, you can also buy complex infrastructures in AWS for your web app.</p>
+  <br>
+  <p>In this blog post, I am going to go through my favourite web hosting services and my experiences with them. Disclamer: Some links contain affiliate urls.</p>
+  <a href="https://m.do.co/c/1b1549cb62c6"><h2>Digital Ocean</h2></a>
+  <p>This was for a long time a favourite of mine. It strikes the perfect balance of complexity and usability. It has a great UI and displays all the important metrics in the dashboard. What initially made me choose them was the extensive documentation on pretty much all major frameworks and programming languages. I've hosted both Ruby on Rails apps and Wordpress sites, though I now feel like its a bit of an overkill to use it for wordpress, specially if you're installing wordpress manually in the server like I am since I haven't found any "1-click install" type services for DO yet. This is actually the service I use to host this website, a simple HTML/CSS website.</p>
+  <p>The specs of the plan I usually use are as follows:</p>
+  <ul>
+    <li><strong>Cost:</strong>5$/month</li>
+    <li><strong>SSD:</strong>20GB</li>
+    <li><strong>1 core processor</strong></li>
+    <li><strong>Bandwidth</strong>1TB</li>
+  </ul>
+
+  <p>In my experience this package is more than enough for any site with a few thousand users a month.</p>
+  <br>
+  <p>The major con I have found with this service provider is that it has an "off" switch for your droplet (the term they use for your instance, or webiste), which I have found is not enough to stop the billing. You have to actually delete it to stop, which was a very painful lesson to learn.</p>
+
+
+  <a href="http://casualhost.com/shared-hosting.html"><h2>Casual Host</h2></a>
+  <p>This is a completely different type of hosting provider, which I enjoy due to its low cost. It's shared hosting plans are super cheap and are ideal for testing out ideas or niches. I use it exclusively for niche blogs and it has worked like a charm. For 10$ a year you get a pretty decent package that can handle reasonable traffic.</p>
+  <ul>
+    <li><strong>Cost:</strong>0.79$/month</li>
+    <li><strong>SSD:</strong>5GB</li>
+    <li><strong>1 core processor</strong></li>
+    <li><strong>Bandwidth</strong>100GB</li>
+  </ul>
+
+  <a href="https://aws.amazon.com/ec2/pricing/on-demand/"><h2>Amazon Web Services</h2></a>
+  <p>And of course, the elephant in the room. I have used this AWS in the past to host a Ruby on Rails app that actually ended up being featured in the Product Hunt homepage, in the days it still attracted massive traffic. It behaved super well and I have to say that for "serious" projects like SaaS apps, AWS is the place to go. Firstly because it scales really well, both in technical and in economical terms, and secondly because there is a lot of good documentation, tutorials and articles on it, as it is the standard for large scale apps. The pricing isn't as straightforward because it depends on the services that you use and the instace type but the specs for what I usually buy can be seen below:</p>
+  <ul>
+    <li><strong>Instance Name:</strong>T2.nano</li>
+    <li><strong>Cost:</strong>4.23$/month</li>
+    <li><strong>SSD:</strong>8GB</li>
+    <li><strong>1 vCPU</strong></li>
+  </ul>
+</div>
+<footer>
+  <div class="container">
+    <a href="mailto:pedro.lopes.dias.92@gmail.com"> Contact </a>
+  </div>
+</footer>
+</body>
+</html>

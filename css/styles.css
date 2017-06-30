@@ -116,7 +116,7 @@ header {
 }
 
 .bar img {
-  width: 9%;
+  width: 100%;
   padding: 10px;
 }
 
@@ -129,6 +129,10 @@ header {
 
 .primary-nav {
   order: 1 !important;
+}
+
+.logo  {
+  width: 10%
 }
 
 
